@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="icon" href="images/DALL·E 2024-11-11 03.35.00 - A modern favicon icon in PNG format with a transparent background for a frontend developer specializing in e-commerce and landing page design. The des.webp">
+    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+    <meta
+      property="og:image"
+      content="images/HOMEPAGE.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/container.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <fieldset class="container">
+      <legend class="container__legend">Currency Converter</legend>
+      <form class="form js-form">
+        <div>
+          <p class="form__paragraf">Convert from:</p>
+          <label class="form__label" for="fromCurrency">Choose currency</label>
+          <select
+            id="fromCurrency"
+            name="fromCurrency"
+            class="form__select js-fromCurrency"
+          >
+            <option>PL</option>
+            <option>EUR</option>
+            <option>USD</option>
+            <option>CNY</option>
+          </select>
+        </div>
+        <div>
+          <p class="form__paragraf">Convert to:</p>
+          <label class="form__label" for="toCurrency">Choose currency</label>
+          <select
+            id="toCurrency"
+            name="toCurrency"
+            class="form__select js-toCurrency"
+          >
+            <option>PL</option>
+            <option>EUR</option>
+            <option>USD</option>
+            <option>CNY</option>
+          </select>
+        </div>
+        <div class="form__spacer" aria-hidden="true"></div>
+        <div class="form__valueNumber">
+          <input
+            class="form__inputNumber js-value"
+            id="convertValue"
+            type="number"
+            min="0"
+            step="any"
+            placeholder="Enter value"
+          />
+        </div>
+        <div class="form__spacer" aria-hidden="true"></div>
+        <p class="form__equalRender js-renderValue"></p>
+        <button class="form__button js-button" type="submit">Convert</button>
+      </form>
+    </fieldset>
+  </body>
+</html>

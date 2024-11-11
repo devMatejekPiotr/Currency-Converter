@@ -1,0 +1,104 @@
+.form {
+    text-align: center;
+  }
+  
+  .form__paragraf {
+    color: var(--color-text);
+  }
+  
+  .form__button {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .form__button::after {
+    content: "";
+    background-color: rgb(255, 255, 255, 0.5);
+    display: block;
+    height: 100px;
+    width: 50px;
+    position: absolute;
+    left: -70px;
+    top: -50%;
+    transform: skewX(-15deg);
+    transition: left 0.15s linear;
+  }
+  
+  .form__button:hover::after {
+    left: 110%;
+  }
+  
+  .form__inputNumber {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .form__inputNumber::placeholder {
+    color: var(--color-text);
+    opacity: 1;
+    transition: transform 0.5s ease, opacity 0.3s;
+    text-align: left;
+    font-style: italic;
+  }
+  
+  .form__button,
+  .form__inputNumber {
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.35)
+    );
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0px 8px 24px 0 rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
+    padding: 10px 16px;
+    font-size: 14px;
+    transition: box-shadow 0.3s, outline 0.3s;
+  }
+  
+  .form__inputNumber:hover,
+  .form__button:hover {
+    box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  .form__inputNumber:focus,
+  .form__button:focus {
+    outline: solid 3px rgba(255, 255, 255, 0.8);
+  }
+  
+  .form__inputNumber:focus::placeholder,
+  .form__inputNumber:not(:placeholder-shown)::placeholder {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  
+  .form__label {
+    color: var(--color-text);
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .form__valueNumber {
+    position: relative;
+    margin-bottom: 12px;
+  }
+  
+  .form__select {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 8px 24px 0 rgba(0, 0, 0, 0.3);
+    outline: none;
+  }
+  
+  .form__spacer {
+    background: rgba(255, 255, 255, 0.55);
+    height: 2px;
+    margin: 10px auto 12px;
+    width: 80%;
+  }
+  
+  .form__equalRender {
+    color: var(--color-text);
+  }
