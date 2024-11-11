@@ -1,5 +1,9 @@
 # Currency Converter 🌍💱
-![Currency Converter Demo](assets/Animation_Currency_Converter.gif)
+
+<p>
+   <img src='assets/Animation_Currency_Converter.gif' alt='Currency Converter Demo' width='700'/>
+</p>
+     
 ## Demo
 Check out: [Currency Converter](https://devmatejekpiotr.github.io/Currency-Converter/)
 
